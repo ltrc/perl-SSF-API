@@ -2,10 +2,15 @@ package shakti_tree_api;
 use Exporter qw(import);
 
 our @EXPORT = qw(
-        print_tree print_node get_children get_leaves get_leaves_child
-        get_nodes get_nodes_pattern delete_node create_parent add_tree
-        direction modify_field move_node get_parent get_next_node
-        get_previous_node add_leaf change_old_new change_new_old);
+        read_story printsentence get_paracount get_bodycount get_body get_para
+        get_sentcount get_sent print_para print_pararef printstory
+        printstory_file copy_story read assign_reach print_tree print_tree_file
+        assign_readable_numbers reorder_numbers print_node get_children
+        get_leaves get_leaves_child get_nodes get_nodes_pattern delete_node
+        create_parent delete_layer create_tree add_tree add_node get_fields
+        get_field modify_field copy move_node copy_tree get_parent
+        get_next_node get_previous_node add_leaf change_old_new change_new_old
+        delete_tree);
 
 #			P.NIRUPAM PRATAP REDDY
 #				   UG3

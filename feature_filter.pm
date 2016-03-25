@@ -2,13 +2,12 @@ package feature_filter;
 use Exporter qw(import);
 
 our @EXPORT = qw(
-        read_FS read_FS_old get_values get_values_2 get_attributes
-        get_path_values get_path_values_2 copyFS add_attr_val
-        add_attr_val_2 update_attr_val update_attr_val_2
-        del_attr_val del_attr_val_2 unify unify_2 merge merge_2
-        load_hash printFS_SSF printFS_SSF_2 make_string
-        make_string_2 prune_FS prune_FS_2 get_fs_reference
-        get_num_fs printFS_SSF_old make_string_old);
+        read_FS convert_to_old read_FS_old get_values get_values_2
+        get_attributes get_path_values get_path_values_2 copyFS add_attr_val
+        add_attr_val_2 update_attr_val update_attr_val_2 del_attr_val
+        del_attr_val_2 unify unify_2 merge merge_2 load_hash printFS_SSF
+        printFS_SSF_2 make_string make_string_2 prune_FS prune_FS_2
+        get_fs_reference get_num_fs printFS_SSF_old make_string_old);
 
 # P.NIRUPAM PRATAP REDDY
 #	200101050 (UG3)
@@ -72,7 +71,7 @@ sub convert_to_old
 #% Pass a string which is the feature structure to be loaded and 
 #% 
 
-sub read_FS_old()
+sub read_FS_old
 {
 	local (@_STRING_,$_INDEX_);
 	my $featureString=$_[0];
@@ -843,7 +842,7 @@ sub load_hash
 #% $fs is a reference to an or node containing multiple possible feature structures.
 #% prints the attributes and values present in the hash in the standard format.
 
-sub printFS_SSF()
+sub printFS_SSF
 {
 	my $arrayRef=$_[0];
 	my $finalString;
@@ -856,7 +855,7 @@ sub printFS_SSF()
 #% $fs is a reference to a single possible feature structure.
 #% prints the attributes and values present in the hash in the standard format.
 
-sub printFS_SSF_2()
+sub printFS_SSF_2
 {
 	my $finalString;
 	my $FSRef=$_[0];
