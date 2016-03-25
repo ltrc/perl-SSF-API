@@ -5,7 +5,8 @@ our @EXPORT = qw(
         read_story get_bodycount get_body
         get_paracount get_para get_sentcount
         get_sent get_leaves get_fields
-        modify_field get_field printstory);
+        modify_field get_field printstory
+        get_children);
 
 #			P.NIRUPAM PRATAP REDDY
 #				   UG3
