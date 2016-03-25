@@ -5,7 +5,8 @@ our @EXPORT = qw(
         read_FS get_num_fs make_string
         get_fs_reference make_string_2 get_values
         get_values_2 add_attr_val_2 prune_FS
-        add_attr_val update_attr_val get_attributes);
+        add_attr_val update_attr_val get_attributes
+        del_attr_val);
 
 # P.NIRUPAM PRATAP REDDY
 #	200101050 (UG3)
