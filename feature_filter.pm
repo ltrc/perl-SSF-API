@@ -2,11 +2,13 @@ package feature_filter;
 use Exporter qw(import);
 
 our @EXPORT = qw(
-        read_FS get_num_fs make_string
-        get_fs_reference make_string_2 get_values
-        get_values_2 add_attr_val_2 prune_FS
-        add_attr_val update_attr_val get_attributes
-        del_attr_val update_attr_val_2);
+        read_FS read_FS_old get_values get_values_2 get_attributes
+        get_path_values get_path_values_2 copyFS add_attr_val
+        add_attr_val_2 update_attr_val update_attr_val_2
+        del_attr_val del_attr_val_2 unify unify_2 merge merge_2
+        load_hash printFS_SSF printFS_SSF_2 make_string
+        make_string_2 prune_FS prune_FS_2 get_fs_reference
+        get_num_fs printFS_SSF_old make_string_old);
 
 # P.NIRUPAM PRATAP REDDY
 #	200101050 (UG3)
